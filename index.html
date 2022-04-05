@@ -11,7 +11,10 @@
 	<!-- mobile viwport meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- fevicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="icon" type="image/x-icon" href="./favico.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<!-- ================================
         CSS Files
@@ -35,34 +38,16 @@
 		<div class="loading-mask"></div>
 		<div class="loading-mask"></div>
 	</div>
-
-	<div class="preview-wrapper">
-		<div class="switcher-head">
-			<span>Trocar estilo</span>
-			<div class="switcher-trigger tf-tools"></div>
-		</div>
-
-		<div class="switcher-body">
-			<h4>Escolha a cor:</h4>
-			<ul class="color-options list-none">
-				<li class="c0" data-color="red" title="Default">Padrão</li>
-				<li class="c1" data-color="blue" title="Red">Vermelho</li>
-				<li class="c2" data-color="green" title="Green">Verde</li>
-				<li class="c3" data-color="yellow" title="Blue">Azul</li>
-			</ul>
-		</div>
-	</div>
-
 	<main class="site-wrapper">
 		<div class="pt-table">
-			<div class="pt-tablecell page-home relative" style="background-image: url('img/banner.jpg');">
+			<div class="page-home relative" style="background-image: url('img/banner.jpg');">
 				<div class="overlay"></div>
 
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
-							<div class="page-title home text-center">
-								<img src="img/logo.png" alt="">
+							<div class="page-title home text-center m-t-50">
+								<img src="img/2300.png" width="250" alt="Logo">
 								<p>Para criar, basta começar!</p>
 							</div>
 
@@ -109,7 +94,7 @@
 											<span class="icon">
 												<i class="tf-profile-male"></i>
 											</span>
-											<span class="title">Sobre</span>
+											<span class="title">Autor</span>
 										</span>
 										<svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1"
 											xmlns="http://www.w3.org/2000/svg">
@@ -161,7 +146,7 @@
 											<span class="icon">
 												<i class="tf-tools"></i>
 											</span>
-											<span class="title">Resumo</span>
+											<span class="title">Currículo</span>
 										</span>
 										<svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1"
 											xmlns="http://www.w3.org/2000/svg">
@@ -187,7 +172,7 @@
 											<span class="icon">
 												<i class="tf-briefcase2"></i>
 											</span>
-											<span class="title">Fizemos</span>
+											<span class="title">Fazemos</span>
 										</span>
 										<svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1"
 											xmlns="http://www.w3.org/2000/svg">
@@ -258,6 +243,13 @@
 
 			</div> <!-- /.pt-tablecell -->
 		</div> <!-- /.pt-table -->
+		<!-- ZAP -->
+		<a 
+			class="call-zap-home"
+			href="https://api.whatsapp.com/send?phone=5527996310148&text=Ol%C3%A1%20WebCriar!%20Gostaria%20de%20algumas%20informa%C3%A7%C3%B5es." 
+			target="_blank">
+			<i class="fa-brands fa-whatsapp fa-3x"></i>
+		</a>
 	</main> <!-- /.site-wrapper -->
 
 	<!-- ================================
@@ -272,6 +264,7 @@
 	<script src="js/jquery-validation.min.js"></script>
 	<script src="js/form.min.js"></script>
 	<script src="js/main.js"></script>
+<script src="js/menu-mobile.js"></script>
 </body>
 
 </html>

@@ -1,107 +1,134 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
-    <head>
-        <!-- meta charset -->
-        <meta charset="utf-8">
-        <!-- site title -->
-        <title>Webcriar - Para criar, basta começar!</title>
-        <!-- meta description -->
-        <meta name="description" content="">
-        <!-- mobile viwport meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- fevicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-        
-        <!-- ================================
+
+<head>
+	<!-- meta charset -->
+	<meta charset="utf-8">
+	<!-- site title -->
+	<title>Webcriar - Para criar, basta começar!</title>
+	<!-- meta description -->
+	<meta name="description" content="">
+	<!-- mobile viwport meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- fevicon -->
+	<link rel="icon" type="image/x-icon" href="./favico.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- ================================
         CSS Files
         ================================= -->
-        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Open+Sans:400,600,700,800" rel="stylesheet">
-        <link rel="stylesheet" href="css/themefisher-fonts.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/dark.css">
-        <link id="color-changer" rel="stylesheet" href="css/colors/color-0.css">
-    </head>
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Open+Sans:400,600,700,800"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/themefisher-fonts.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/dark.css">
+	<link id="color-changer" rel="stylesheet" href="css/colors/color-0.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-    <body class="dark">
+<body class="dark">
 
-        <div class="preloader">
-            <div class="loading-mask"></div>
-            <div class="loading-mask"></div>
-            <div class="loading-mask"></div>
-            <div class="loading-mask"></div>
-            <div class="loading-mask"></div>
-        </div>
+	<div class="preloader">
+		<div class="loading-mask"></div>
+		<div class="loading-mask"></div>
+		<div class="loading-mask"></div>
+		<div class="loading-mask"></div>
+		<div class="loading-mask"></div>
+	</div>
 
-        <div class="preview-wrapper">
-            <div class="switcher-head">
-                <span>Trocar estilo</span>
-                <div class="switcher-trigger tf-tools"></div>
-            </div>
+	<main class="site-wrapper">
+		<div class="pt-table">
+			<div class="page-welcome relative">
+				<!-- menu -->
+				<!-- Menu mobile -->
+				<div class="pb-100 visible-sm visible-xs">
+					<div class="topnav">
+						<a href="" class=""><img src="./img/logo_header.png" alt="logo"></a>
+						<div id="myLinks">
+							<a class="topnav-active" href="index.html">Início</a>
+							<a href="welcome.html">Boas Vindas</a>
+							<a href="about.html">Autor</a>
+							<a href="services.html">Serviços</a>
+							<a href="resume.html">Currículo</a>
+							<a href="works.html">Fazemos</a>
+							<a href="testimonials.html">Depoimentos</a>
+							<a href="contact.html">Contato</a>
+						</div>
+						<a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+							<i class="fa fa-bars fa-2x"></i>
+						</a>
+					</div>
+				</div>
+				<div class="container pb-100 hidden-sm hidden-xs">
+					<div class="row">
+						<ul class="menu-top">
+							<li style="margin-right: auto;"><span class="menu-top-img" href="#" style="padding: 3px 10px 3px 13px;"><img src="./img/logo_menu_header.png" alt="Logo"></></li>
+							<li><a href="index.html">Início</a></li>
+							<li><a class="menu-active" href="welcome.html">Boas Vindas</a></li>
+							<li><a href="about.html">Autor</a></li>
+							<li><a href="services.html">Serviços</a></li>
+							<li><a href="resume.html">Currículo</a></li>
+							<li><a href="works.html">Fazemos</a></li>
+							<li><a href="testimonials.html">Depoimentos</a></li>
+							<li style="margin-right: auto;"><a href="contact.html">Contato</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end menu -->
+				<div class="container text-center">
+					<div class="row">
+						<div class="col-xs-12 col-md-12 col-lg-12">
+							<div class="page-title">
+								<h2>Web <span class="primary">Criar</span> <span class="title-bg">Webcriar</span></h2>
+								<p>Criamos, editamos, refazemos sua marca, seu site, seu produto. <br>
+									Projetos personalizados para a sua marca ou o seu cliente. <br>
+									Fale conosco. Com certeza podemos te ajudar!
+								</p>
+							</div>
+						</div>
+					</div> <!-- /.row -->
+				</div> <!-- /.container -->
+				<!-- /.container -->
 
-            <div class="switcher-body">
-                <h4>Escolha</h4>
-                <ul class="color-options list-none">
-                    <li class="c0" data-color="red" title="Default">Default</li>
-                    <li class="c1" data-color="blue" title="Red">Red</li>
-                    <li class="c2" data-color="green" title="Green">Green</li>
-                    <li class="c3" data-color="yellow" title="Blue">Blue</li>
-                </ul>
-            </div>
-        </div>
+				<!-- call to action -->
+				<div class="call-to-action">
+					<div class="container call-to-action-flex">
+						<h2 class="zap-text">Se precisar de alguma informação, nos chame no WhatsApp. <br>Certamente
+							podemos te ajudar. Conte conosco!</h2>
+						<a class="zap-btn"
+							href="https://api.whatsapp.com/send?phone=5527996310148&text=Ol%C3%A1%20WebCriar!%20Gostaria%20de%20algumas%20informa%C3%A7%C3%B5es."
+							target="_blank">
+							<span><i class="fa-brands fa-whatsapp fa-2x"></i></span>
+							<span>WhatsApp</span>
+						</a>
+					</div>
+				</div>
+				<!-- call to action -->
 
-        <main class="site-wrapper">
-            <div class="pt-table">
-                <div class="pt-tablecell page-welcome relative">
-                    <!-- .close -->
-                    <a href="index.html" class="page-close"><i class="tf-ion-close"></i></a>
-                    <!-- /.close -->
+			</div> <!-- /.pt-tablecell -->
 
-                    <div class="author-image-large">
-                        <img src="img/fundo_logo.png" alt="">
-                    </div>
-                    
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6 col-lg-7">
-                                <div class="page-title">
-                                    <h2>Web <span class="primary">Criar</span> <span class="title-bg">Webcriar</span></h2>
-                                    <p>Criamos, editamos, refazemos sua marca, seu site, seu produto.</p>
-                                    <p>Projetos personalizados para a sua marca ou o seu cliente.</p>
-                                    <p>Fale com a gente. Com certeza podemos te ajudar!</p>
-                                </div>
-                            </div>
-                        </div> <!-- /.row -->
-                    </div> <!-- /.container -->
+		</div> <!-- /.pt-table -->
+	</main> <!-- /.site-wrapper -->
 
-                    <nav class="page-nav clear">
-                        <div class="container">
-                            <div class="flex flex-middle space-between">
-                                <span class="prev-page"><a href="index.html" class="link">&larr; Página Anterior</a></span>
-                                <span class="copyright hidden-xs">Copyright &copy; 2022 Webcriar. Todos direitos reservados.</span>
-                                <span class="next-page"><a href="about.html" class="link">Próxima Página &rarr;</a></span>
-                            </div>
-                        </div>
-                        <!-- /.page-nav -->
-                    </nav>
-                    <!-- /.container -->
-
-                </div> <!-- /.pt-tablecell -->
-            </div> <!-- /.pt-table -->
-        </main> <!-- /.site-wrapper -->
-        
-        <!-- ================================
+	<!-- ================================
         JavaScript Libraries
         ================================= -->
-        <script src="js/vendor/jquery-2.2.4.min.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/isotope.pkgd.min.js"></script>
-        <script src="js/jquery.nicescroll.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery-validation.min.js"></script>
-        <script src="js/form.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery-validation.min.js"></script>
+	<script src="js/form.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/menu-mobile.js"></script>
+</body>
+
 </html>

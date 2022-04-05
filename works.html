@@ -11,7 +11,10 @@
 	<!-- mobile viwport meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- fevicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="icon" type="image/x-icon" href="./favico.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<!-- ================================
         CSS Files
@@ -36,29 +39,46 @@
 		<div class="loading-mask"></div>
 	</div>
 
-	<div class="preview-wrapper">
-		<div class="switcher-head">
-			<span>Trocar estilo</span>
-			<div class="switcher-trigger tf-tools"></div>
-		</div>
-
-		<div class="switcher-body">
-			<h4>Escolha</h4>
-			<ul class="color-options list-none">
-				<li class="c0" data-color="red" title="Default">Default</li>
-				<li class="c1" data-color="blue" title="Red">Red</li>
-				<li class="c2" data-color="green" title="Green">Green</li>
-				<li class="c3" data-color="yellow" title="Blue">Blue</li>
-			</ul>
-		</div>
-	</div>
-
 	<main class="site-wrapper">
 		<div class="pt-table">
-			<div class="pt-tablecell page-works relative">
-				<!-- .close -->
-				<a href="./" class="page-close"><i class="tf-ion-close"> </i></a>
-				<!-- /.close -->
+			<div class="page-works relative">
+				<!-- Menu mobile -->
+				<div class="pb-100 visible-sm visible-xs">
+					<div class="topnav">
+						<a href="" class=""><img src="./img/logo_header.png" alt=""></a>
+						<div id="myLinks">
+							<a class="topnav-active" href="index.html">Início</a>
+							<a href="welcome.html">Boas Vindas</a>
+							<a href="about.html">Autor</a>
+							<a href="services.html">Serviços</a>
+							<a href="resume.html">Currículo</a>
+							<a href="works.html">Fazemos</a>
+							<a href="testimonials.html">Depoimentos</a>
+							<a href="contact.html">Contato</a>
+						</div>
+						<a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+							<i class="fa fa-bars fa-2x"></i>
+						</a>
+					</div>
+				</div>
+
+				<!-- menu -->
+				<div class="container pb-100 hidden-sm hidden-xs">
+					<div class="row">
+						<ul class="menu-top">
+							<li style="margin-right: auto;"><span class="menu-top-img" href="#" style="padding: 3px 10px 3px 13px;"><img src="./img/logo_menu_header.png" alt="Logo"></></li>
+								<li><a href="index.html">Início</a></li>
+								<li><a href="welcome.html">Boas Vindas</a></li>
+								<li><a href="about.html">Autor</a></li>
+								<li><a href="services.html">Serviços</a></li>
+								<li><a href="resume.html">Currículo</a></li>
+								<li><a class="menu-active" href="works.html">Fazemos</a></li>
+								<li><a href="testimonials.html">Depoimentos</a></li>
+								<li style="margin-right: auto;"><a href="contact.html">Contato</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end menu -->
 
 				<div class="container">
 					<div class="row">
@@ -66,9 +86,12 @@
 							<div class="page-title text-center">
 								<h2>Já <span class="primary">Fizemos</span> <span class="title-bg">Fazemos</span></h2>
 								<p>Abaixo estão algumas de nossas criações.
-									Você também pode nos acompanhar na nossa página no <a href="https://www.instagram.com/webcriar/"
+									Você também pode nos acompanhar na nossa página no <a
+										href="https://www.instagram.com/webcriar/"
 										target="_blank"><strong>Instagram</strong></a>.
-									Para isso, <a href="https://www.instagram.com/webcriar/" target="_blank"><strong><u>Clique aqui</u></strong>.</a>
+									Para isso, <a href="https://www.instagram.com/webcriar/"
+										target="_blank"><strong><u>Clique
+												aqui</u></strong>.</a>
 								</p>
 							</div>
 						</div>
@@ -619,22 +642,14 @@
 
 						<div class="col-xs-12 text-center Photoshop Illustrator Indesign Artworks">
 							<p>Para ver mais, acesse nossa página no <a href="https://www.instagram.com/webcriar/"
-								target="_blank"><img src="img/insta.png" alt="logo" style="margin:-3px 3px 0;"><strong>Instagram</strong></a>.
-							Para isso, <a href="https://www.instagram.com/webcriar/" target="_blank"><strong><u>Clique aqui</u></strong>.</a></p>
+									target="_blank"><img src="img/insta.png" alt="logo"
+										style="margin:-3px 3px 0;"><strong>Instagram</strong></a>.
+								Para isso, <a href="https://www.instagram.com/webcriar/"
+									target="_blank"><strong><u>Clique
+											aqui</u></strong>.</a></p>
 						</div>
 					</div> <!-- /.row -->
 				</div> <!-- /.container -->
-
-				<nav class="page-nav clear">
-					<div class="container">
-						<div class="flex flex-middle space-between">
-							<span class="prev-page"><a href="resume.html" class="link">&larr; Página Anterior</a></span>
-							<span class="copyright hidden-xs">Copyright &copy; 2022 Webcriar. Todos direitos reservados.</span>
-							<span class="next-page"><a href="testimonials.html" class="link">Próxima Página &rarr;</a></span>
-						</div>
-					</div>
-					<!-- /.page-nav -->
-				</nav>
 				<!-- /.container -->
 
 			</div> <!-- /.pt-tablecell -->
@@ -653,6 +668,7 @@
 	<script src="js/jquery-validation.min.js"></script>
 	<script src="js/form.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/menu-mobile.js"></script>
 </body>
 
 </html>
