@@ -1046,6 +1046,7 @@ textarea, label {
 }
 
 .contact-block {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 .contact-block:last-child {
@@ -1705,14 +1706,20 @@ ul.menu-top .menu-active {
 .call-zap-home {
   background-color: #2ecc71;
   color: #fff;
-  padding: 15px;
+  padding: 20px;
   border-radius: 50%;
   position: fixed;
+  width: 80px;
+  height: 80px;
   right: 50px;
   bottom: 50px;
+  z-index: 1;
 }
 .call-zap-home:hover,
 .call-zap-home a:active, 
 .call-zap-home a:focus {
   color: #fff;
+}
+.call-zap-home i {
+  margin-top: -5px;
 }
